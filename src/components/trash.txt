@@ -1,0 +1,47 @@
+  {/*<Wrapper>*/}
+    {/*  <Header>*/}
+    {/*    <Title>Report Generator</Title>*/}
+    {/*    <SubTitle>Генератор репортов из CSV файлов</SubTitle>*/}
+    {/*  </Header>*/}
+    {/*  <Inputs>*/}
+    {/*    <Row>*/}
+    {/*      <Link />*/}
+    {/*      <Margin />*/}
+    {/*      <Button>Скачать CSV</Button>*/}
+    {/*    </Row>*/}
+    {/*    <Row>*/}
+    {/*      <Button onClick={handleClick}>*/}
+    {/*        <input hidden ref={fileInput} type="file" onChange={handleFiles} />*/}
+    {/*        Загрузить CSV*/}
+    {/*      </Button>*/}
+    {/*      <Margin />*/}
+    {/*      <Button>Скопировать</Button>*/}
+    {/*    </Row>*/}
+    {/*  </Inputs>*/}
+    {/*  <Settings>*/}
+    {/*    <Checkbox*/}
+    {/*      label={'Strict style'}*/}
+    {/*      value={strict}*/}
+    {/*      onChange={() => setStrict(!strict)}*/}
+    {/*    />*/}
+    {/*    <Checkbox*/}
+    {/*      label={'More info'}*/}
+    {/*      value={strict}*/}
+    {/*      onChange={() => setStrict(!strict)}*/}
+    {/*    />*/}
+    {/*    <Checkbox*/}
+    {/*      label={'Creator'}*/}
+    {/*      value={strict}*/}
+    {/*      onChange={() => setStrict(!strict)}*/}
+    {/*    />*/}
+    {/*    <Checkbox*/}
+    {/*      label={'Full'}*/}
+    {/*      value={strict}*/}
+    {/*      onChange={() => setStrict(!strict)}*/}
+    {/*    />*/}
+    {/*  </Settings>*/}
+    {/*  <Outputs>*/}
+    {/*    {text}*/}
+    {/*  </Outputs>*/}
+    {/*  <Footer>Git</Footer>*/}
+    {/*</Wrapper>*/}
