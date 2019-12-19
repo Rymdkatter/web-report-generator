@@ -1,4 +1,4 @@
-import React, {useRef} from "react";
+import React, { useRef } from 'react';
 import styled from 'styled-components';
 
 const Block = styled('div')`
@@ -34,16 +34,17 @@ const Toggle = styled('div')`
   border-radius: 5px;
 `;
 
-export const Checkbox = ({ label, value, onChange }) => {
-
+const Checkbox = ({ label, value, onChange }) => {
   const checkboxBlock = useRef(null);
   const handleClick = () => checkboxBlock.current && checkboxBlock.current.click();
 
   return (
-      <Block onClick={handleClick}>
-        <Toggle />
-        <Label>{label}</Label>
-        <Input  hidden ref={checkboxBlock} type="checkbox" checked={value} onChange={onChange} />
-      </Block>
-  )
+    <Block onClick={handleClick}>
+      <Toggle />
+      <Label>{label}</Label>
+      <Input hidden ref={checkboxBlock} type="checkbox" checked={value} onChange={onChange} />
+    </Block>
+  );
 };
+
+export default Checkbox;

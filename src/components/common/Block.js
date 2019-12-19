@@ -1,8 +1,7 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled('div')`
-  font-family: 'Montserrat', sans-serif;
   width: 600px;
   height: 400px;
   display: grid;
@@ -13,7 +12,6 @@ const Wrapper = styled('div')`
 `;
 
 const Title = styled('div')`
-  font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   color: #6E6E6E;
   margin-left: 5px;
@@ -55,19 +53,18 @@ const ContentBlock = styled('div')`
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 `;
 
-export const Block = ({ block, index }) => {
-  return (
-    <Wrapper>
-      <TitleBlock>
-        <DragButton>
-          <Dot />
-          <Dot />
-          <Dot />
-        </DragButton>
-        <Title>{block.title}</Title>
-      </TitleBlock>
-      <ContentBlock>
-      </ContentBlock>
-    </Wrapper>
-  )
-};
+const Block = ({ block, index }) => (
+  <Wrapper>
+    <TitleBlock>
+      <DragButton>
+        <Dot />
+        <Dot />
+        <Dot />
+      </DragButton>
+      <Title>{block.title}</Title>
+    </TitleBlock>
+    <ContentBlock />
+  </Wrapper>
+);
+
+export default Block;

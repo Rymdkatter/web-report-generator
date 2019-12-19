@@ -1,18 +1,18 @@
 export default [
   {
     id: 'id-0',
-    title: 'Test',
+    title: 'Options',
   },
   {
     id: 'id-1',
-    title: 'Test 2',
+    title: 'Schedule',
   },
   {
     id: 'id-2',
-    title: 'Test 3',
+    title: 'Report',
   },
   {
     id: 'id-3',
-    title: 'Test 4',
+    title: 'Presets',
   },
 ]

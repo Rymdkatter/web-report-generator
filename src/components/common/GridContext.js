@@ -1,6 +1,6 @@
 import React, { Component, createContext } from 'react';
-import { moveElement } from './DragAndDrop/helpers';
-import ContentItems from "./ContentItems";
+import moveElement from './DragAndDrop/helpers';
+import ContentItems from './ContentItems';
 
 const GridContext = createContext({ items: [] });
 
@@ -10,7 +10,7 @@ export class GridProvider extends Component {
     this.state = {
       items: ContentItems,
       moveItem: this.moveItem,
-      setItems: this.setItems
+      setItems: this.setItems,
     };
   }
 
