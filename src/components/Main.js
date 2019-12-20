@@ -15,7 +15,7 @@ const Nav = styled('div')`
   grid-gap: 25px;
   margin-left: 40px;
   grid-template-rows: 50px 100px 180px;
-  grid-template-areas: "header" "info" "buttons";
+  grid-template-areas: "header" "info" "buttons" "activity";
 `;
 
 const Header = styled('div')`
@@ -66,6 +66,7 @@ const ButtonGroup = styled('div')`
 
 const Button = styled('div')`
   display: flex;
+  cursor: pointer;
   align-items: center;
   justify-content: center;
   width: 250px;
@@ -84,6 +85,42 @@ const ButtonLabel = styled('div')`
   color: #FFFFFF;
   text-align: center;
   align-self: center;
+`;
+
+const Activity = styled('div')`
+  grid-area: activity;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+`;
+
+const Label = styled('div')`
+  font-size: 18px;
+`;
+
+const Circle = styled('svg')`
+  width: 50px;
+  height: 50px;
+`;
+
+const Row = styled('div')`
+  display: flex;
+  flex-direction: row;
+`;
+
+const Information = styled('div')`
+  width: 300px;
+  height: 100px;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+`;
+
+const InformationButton = styled('div')`
 `;
 
 const Main = () => (
@@ -109,6 +146,142 @@ const Main = () => (
           <ButtonLabel>Copy</ButtonLabel>
         </Button>
       </ButtonGroup>
+      <Activity>
+        <Label>Activity</Label>
+        <Row>
+          <Circle viewBox="0 0 200 200">
+            <circle
+              r="80"
+              cx="100"
+              cy="100"
+              fill="none"
+              stroke-width="12"
+              stroke="#ccc"
+            />
+            <circle
+              r="80"
+              cx="100"
+              cy="100"
+              fill="none"
+              stroke-width="12"
+              stroke="#E0223E"
+              stroke-linecap="round"
+              stroke-dasharray="4.5 502.4"
+              stroke-dashoffset="132"
+            />
+            <text
+              x="100"
+              y="125"
+              font-family="Open Sans"
+              font-size="70"
+              text-anchor="middle"
+              fill="#444"
+            >
+              1
+            </text>
+          </Circle>
+          <Circle viewBox="0 0 200 200">
+            <circle
+              r="80"
+              cx="100"
+              cy="100"
+              fill="none"
+              stroke-width="12"
+              stroke="#ccc"
+            />
+            <circle
+              r="80"
+              cx="100"
+              cy="100"
+              fill="none"
+              stroke-width="12"
+              stroke="#E0223E"
+              stroke-linecap="round"
+              stroke-dasharray="64.5 502.4" // first number line width
+              stroke-dashoffset="192" // 132 + offset. Offset = line width - 4.2
+            />
+            <text
+              x="100"
+              y="125"
+              font-family="Open Sans"
+              font-size="70"
+              text-anchor="middle"
+              fill="#444"
+            >
+              15
+            </text>
+          </Circle>
+        </Row>
+        <Row>
+          <Circle viewBox="0 0 200 200">
+            <circle
+              r="80"
+              cx="100"
+              cy="100"
+              fill="none"
+              stroke-width="12"
+              stroke="#ccc"
+            />
+            <circle
+              r="80"
+              cx="100"
+              cy="100"
+              fill="none"
+              stroke-width="12"
+              stroke="#E0223E"
+              stroke-linecap="round"
+              stroke-dasharray="164.5 502.4" // first number line width
+              stroke-dashoffset="292" // 132 + offset. Offset = line width - 4.2
+            />
+            <text
+              x="100"
+              y="125"
+              font-family="Open Sans"
+              font-size="70"
+              text-anchor="middle"
+              fill="#444"
+            >
+              25
+            </text>
+          </Circle>
+          <Circle viewBox="0 0 200 200">
+            <circle
+              r="80"
+              cx="100"
+              cy="100"
+              fill="none"
+              stroke-width="12"
+              stroke="#ccc"
+            />
+            <circle
+              r="80"
+              cx="100"
+              cy="100"
+              fill="none"
+              stroke-width="12"
+              stroke="#F18325"
+              stroke-linecap="round"
+              stroke-dasharray="226 251.2" // first number line width
+              stroke-dashoffset="98" // 132 + offset. Offset = line width - 4.2
+            />
+            <text
+              x="100"
+              y="125"
+              font-family="Open Sans"
+              font-size="70"
+              text-anchor="middle"
+              fill="#444"
+            >
+              50
+            </text>
+          </Circle>
+        </Row>
+      </Activity>
+      <Information>
+        <InformationButton>
+          Information
+        </InformationButton>
+      </Information>
     </Nav>
     <Grid>
       <BlockList />
